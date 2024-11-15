@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto</title>
+    <link rel="stylesheet" href="./css/chamado.css">
+    <link rel="shortcut icon" href="./img/glpi lpgo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="./index.html" target="_self">Menu</a></li>
+              <li><a href="./login.html" target="_self">Login</a></li>
+              <li><a href="./chamados.html" target="_self">Chamados</a></li>
+              <li><a href="./solicitacoes.html" target="_self">Solicitações</a></li>
+            </ul>
+        <header>
+            <img src="./img/glpi lpgo.png" alt="Logo GLPI">
+        </header>
+        <h1> Abertura de Chamado</h1>
+        <footer>
+        <br>
+        <label for="name">Título:</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="">
+        <br>
+        <label for="message">Descrição:</label>
+        <br>
+        <textarea id="message" name="message" rows="10" cols="50"></textarea>
+        </footer>
+        <section>
+            <form>
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                <br>
+                <label for="email">Email para contato:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
+                <br>
+                <label for="data">Selecione uma data:</label>
+                <input type="date" id="data" name="data">
+            </form>
+            <br>
+                <label for="urgencia">Urgência:</label>
+                <select id="tipo" name="tipo" required>
+                <option value="" disabled selected></option>
+                <option value="grande">Grande</option>
+                <option value="Média">Média</option>
+                <option value="Pequena">Pequena</option>
+                <br>
+                <option value="outro">Outro</option>
+                </select>
+                <label for="tipo">Tipo de Chamado:</label>
+                <select id="tipo" name="tipo" required>
+                <option value="" disabled selected></option>
+                <option value="Erro">Erro de Sistema</option>
+                <option value="Funcionalidade">Solicitação de Funcionalidade</option>
+                <option value="suporte">Suporte técnico</option>
+                <option value="outro">Outro</option>
+                <br>
+                <input type="submit" value="Abrir Chamado">
+              </form>
+            </select>
+              </label>
+        </section>
+    </main>
+</body>
+</html>
